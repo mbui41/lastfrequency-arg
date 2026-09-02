@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Last Frequency — Command Center</title>
+<meta name="description" content="Official archive of emergency broadcasts, case files, personnel and classified reports. A fictional ARG.">
+<style>
+  :root{ --bg:#0a0506; --panel:#130a0c; --panel2:#180c0f; --line:#341216; --text:#eadada; --muted:#9a8888; --accent:#e11d2a; --accent2:#ff5647; }
+  *{box-sizing:border-box}
+  html,body{margin:0}
+  body{background:var(--bg);color:var(--text);font-family:"Segoe UI",Roboto,system-ui,Arial,sans-serif;line-height:1.5}
+  a{color:inherit;text-decoration:none}
+  img{max-width:100%}
+  .wrap{max-width:1280px;margin:0 auto;padding:0 22px}
+  header{position:sticky;top:0;z-index:20;background:rgba(10,5,6,.94);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+  .bar{display:flex;align-items:center;gap:14px;height:66px}
+  .brand{display:flex;align-items:center;gap:12px}
+  .brand img{height:42px;width:42px;border-radius:50%;object-fit:cover}
+  .brand small{display:block;font-size:10px;letter-spacing:.24em;color:var(--accent2);font-weight:800}
+  .brand b{font-size:17px;letter-spacing:.04em}
+  nav.top{margin-left:auto;display:flex;gap:26px;font-size:13px;letter-spacing:.1em;color:var(--muted)}
+  nav.top a:hover{color:var(--text)}
+  .clsbtn{border:1px solid var(--accent);color:var(--accent2);padding:8px 16px;border-radius:6px;font-size:12px;letter-spacing:.08em;font-weight:700}
+  .clsbtn:hover{background:var(--accent);color:#fff}
+  main{padding:24px 0 10px}
+  .layout{display:grid;grid-template-columns:1fr 340px;gap:22px}
+  .hero{position:relative;border:1px solid var(--line);border-radius:12px;overflow:hidden;min-height:340px;display:flex;align-items:center;background:#0d0708}
+  .hero .bg{position:absolute;inset:0;background:#0d0708 center/cover no-repeat}
+  .hero .ov{position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,5,6,.96) 0%,rgba(10,5,6,.7) 42%,rgba(10,5,6,.15) 100%)}
+  .hero .in{position:relative;padding:34px 36px;max-width:60%}
+  .hero small{color:var(--muted);letter-spacing:.22em;font-size:12px}
+  .hero h1{font-size:40px;line-height:1.03;margin:6px 0 4px;letter-spacing:.01em}
+  .hero h1 span{color:var(--accent);display:block}
+  .hero p{color:#cbbcbc;max-width:44ch;margin:12px 0 20px}
+  .btn{display:inline-block;background:var(--accent);color:#fff;font-weight:700;letter-spacing:.05em;padding:12px 22px;border-radius:7px;font-size:13px}
+  .btn:hover{background:var(--accent2)}
+  .btn.ghost{background:transparent;border:1px solid var(--line);color:var(--text);margin-left:10px}
+  h2.sec{font-size:14px;letter-spacing:.18em;color:var(--muted);border-bottom:1px solid var(--line);padding-bottom:10px;margin:26px 0 18px;display:flex;align-items:center;gap:10px}
+  h2.sec::before{content:"";width:8px;height:8px;background:var(--accent);border-radius:2px;box-shadow:0 0 8px var(--accent)}
+  .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:9px;overflow:hidden;transition:transform .15s,border-color .15s;display:block}
+  .card:hover{transform:translateY(-3px);border-color:var(--accent)}
+  .card .thumb{position:relative;aspect-ratio:16/9;background:#1a0e11 center/cover no-repeat}
+  .card .thumb::after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 45%,rgba(0,0,0,.82))}
+  .card .ep{position:absolute;top:8px;left:12px;z-index:2;font-size:11px;letter-spacing:.14em;color:#fff;opacity:.92}
+  .card .ep b{display:block;font-size:32px;line-height:1;font-weight:800}
+  .card .play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);z-index:2;width:46px;height:46px;border-radius:50%;background:var(--accent);display:flex;align-items:center;justify-content:center;box-shadow:0 0 20px rgba(225,29,42,.6)}
+  .card .play svg{width:16px;height:16px;fill:#fff;margin-left:2px}
+  .card .body{padding:12px 14px}
+  .card .loc{font-weight:800}
+  .card .ti{color:var(--muted);font-size:13px;margin-top:3px;min-height:34px}
+  .card .row{display:flex;gap:8px;margin-top:8px}
+  .badge{font-size:10px;letter-spacing:.07em;border:1px solid var(--line);border-radius:3px;padding:2px 7px;color:var(--muted)}
+  .badge.hot{color:var(--accent2);border-color:var(--accent)}
+  .empty{color:var(--muted);padding:30px;border:1px dashed var(--line);border-radius:9px;text-align:center}
+  /* sidebar */
+  .side .box{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px 16px;margin-bottom:18px}
+  .side h3{font-size:13px;letter-spacing:.14em;margin:0 0 12px;display:flex;align-items:center;gap:8px;color:var(--text)}
+  .side h3 .ic{color:var(--accent)}
+  .srow{display:flex;align-items:center;gap:10px;padding:9px 0;border-bottom:1px solid #2a1013}
+  .srow:last-child{border-bottom:0}
+  .srow .lab{color:var(--muted);font-size:12px;letter-spacing:.08em;flex:1;display:flex;align-items:center;gap:9px}
+  .srow .val{font-weight:800;color:var(--accent2)}
+  .srow .val.sm{font-size:12px;color:var(--text);font-weight:600}
+  .alert{display:flex;gap:10px;padding:9px 0;border-bottom:1px solid #2a1013}
+  .alert:last-child{border-bottom:0}
+  .alert .warn{color:var(--accent2);flex:0 0 auto}
+  .alert .txt{font-size:13px}
+  .alert .txt .dt{display:block;color:var(--muted);font-size:11px;letter-spacing:.06em;margin-top:2px}
+  .qlink{display:flex;align-items:center;gap:10px;padding:8px 0;color:var(--text);font-size:13px;border-bottom:1px solid #2a1013}
+  .qlink:last-child{border-bottom:0}
+  .qlink:hover{color:var(--accent2)}
+  footer{border-top:1px solid var(--line);margin-top:26px;padding:24px 0;color:var(--muted);font-size:12px}
+  footer .wrap{display:flex;gap:16px;flex-wrap:wrap;justify-content:space-between}
+  @media(max-width:980px){ .layout{grid-template-columns:1fr} .hero .in{max-width:100%} .hero .ov{background:linear-gradient(0deg,rgba(10,5,6,.96),rgba(10,5,6,.55))} nav.top{display:none} .hero h1{font-size:32px} }
+  @media(max-width:560px){ .grid{grid-template-columns:1fr} }
+</style>
+</head>
+<body>
+<header><div class="wrap bar">
+  <a class="brand" href="/"><img src="logo.png" alt="" onerror="this.style.display='none'"><span><small>EMERGENCY BROADCAST</small><b>THE LAST FREQUENCY</b></span></a>
+  <nav class="top"><a href="#cases">CASES</a><a href="#situation">STATUS</a><a href="#about">ABOUT</a></nav>
+  <a class="clsbtn" id="cls" href="#cases">🔒 CLASSIFIED ACCESS</a>
+</div></header>
+
+<main class="wrap">
+  <div class="hero">
+    <div class="bg" id="herobg"></div><div class="ov"></div>
+    <div class="in">
+      <small>WELCOME TO THE</small>
+      <h1>THE LAST FREQUENCY<span>COMMAND CENTER</span></h1>
+      <p>Your source for official updates, tactical maps, personnel profiles, and classified reports on ongoing outbreaks and disasters across the country.</p>
+      <a class="btn" id="cta-map" href="#cases">▶ VIEW LATEST CASE</a>
+      <a class="btn ghost" href="#cases">BROWSE ALL CASES</a>
+    </div>
+  </div>
+
+  <div class="layout">
+    <div class="mainc">
+      <h2 class="sec" id="cases">LATEST CASES</h2>
+      <div class="grid" id="grid"></div>
+      <div class="empty" id="empty" style="display:none">No case files published yet. New broadcasts appear here automatically.</div>
+    </div>
+
+    <aside class="side">
+      <div class="box" id="situation">
+        <h3><span class="ic">☣</span> SITUATION OVERVIEW</h3>
+        <div id="stat-rows"></div>
+      </div>
+      <div class="box">
+        <h3><span class="ic">📡</span> EMERGENCY ALERT FEED</h3>
+        <div id="alert-feed"></div>
+      </div>
+      <div class="box">
+        <h3><span class="ic">🗂</span> QUICK RESOURCES</h3>
+        <div id="quick"></div>
+      </div>
+    </aside>
+  </div>
+
+  <h2 class="sec" id="about">ABOUT</h2>
+  <p style="color:var(--muted);max-width:74ch">The Last Frequency is a fictional Alternate Reality Game. Every case file, agency, character and event is invented for entertainment. Nothing here is a real emergency, a real organization, or a real government system.</p>
+</main>
+
+<footer><div class="wrap">
+  <span>© <span id="yr"></span> THE LAST FREQUENCY COMMAND CENTER — FICTIONAL ENTERTAINMENT / ARG</span>
+  <span>THIS IS A FICTIONAL EMERGENCY BROADCAST ARCHIVE — NOT A REAL SYSTEM</span>
+</div></footer>
+
+<script>
+document.getElementById("yr").textContent = new Date().getFullYear();
+// hero background (falls back to a dark gradient if hero.jpg is absent)
+(function(){ var img=new Image(); img.onload=function(){ document.getElementById("herobg").style.backgroundImage="url(hero.jpg)"; }; img.src="hero.jpg"; })();
+var E=function(s){ return String(s==null?"":s).replace(/[<>&]/g,function(c){return {"<":"&lt;",">":"&gt;","&":"&amp;"}[c];}); };
+function hash(s){ var h=0; s=String(s||""); for(var i=0;i<s.length;i++){ h=(h*31+s.charCodeAt(i))|0; } return Math.abs(h); }
+function comma(n){ return Math.round(n).toString().replace(/\B(?=(\d{3})+(?!\d))/g,","); }
+function threatBadge(n){ return '<span class="badge'+((n>=4)?' hot':'')+'">THREAT '+(n||"?")+'/5</span>'; }
+function card(c){
+  var thumb=c.thumb||(c.youtubeId?'https://i.ytimg.com/vi/'+c.youtubeId+'/hqdefault.jpg':'');
+  var ep=c.episode?('<span class="ep">CASE<b>'+String(c.episode).padStart(2,'0')+'</b></span>'):'';
+  return '<a class="card" href="'+E(c.url)+'"><div class="thumb" style="'+(thumb?'background-image:url('+E(thumb)+')':'')+'">'+ep+
+    '<span class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span></div>'+
+    '<div class="body"><div class="loc">'+E(c.location||c.caseNumber)+'</div><div class="ti">'+E(c.title||"")+'</div>'+
+    '<div class="row">'+threatBadge(c.threatLevel)+'<span class="badge">'+E(c.status||"—")+'</span></div></div></a>';
+}
+function stats(cases){
+  var active=cases.filter(function(c){return /ONGOING|QUARANTINE|LOST|UNKNOWN/i.test(c.status||"");}).length;
+  var confirmed=cases.reduce(function(s,c){ return s + ((c.threatLevel||1)*9000 + hash(c.caseNumber)%9000); }, 0);
+  var fatal=Math.round(confirmed*0.142);
+  var zones=cases.reduce(function(s,c){ return s + ((c.threatLevel||1)*3 + hash(c.slug||c.caseNumber)%5); }, 0);
+  var latest=cases.map(function(c){return c.date||"";}).sort().slice(-1)[0]||"—";
+  var rows=[
+    ['☣','ACTIVE OUTBREAKS', comma(active||cases.length), false],
+    ['✚','CONFIRMED CASES', comma(confirmed), false],
+    ['☠','FATALITIES', comma(fatal), false],
+    ['⛨','QUARANTINED ZONES', comma(zones), false],
+    ['◷','LAST UPDATED', latest, true],
+  ];
+  document.getElementById("stat-rows").innerHTML=rows.map(function(r){
+    return '<div class="srow"><div class="lab"><span style="color:var(--accent)">'+r[0]+'</span>'+r[1]+'</div><div class="val'+(r[3]?' sm':'')+'">'+E(r[2])+'</div></div>';
+  }).join("");
+}
+function feed(cases){
+  var items=cases.slice(0,5).map(function(c){
+    var lvl=c.threatLevel||3; var line=(c.status==="LOST")?(E(c.location)+' has gone dark — contact lost')
+      :(c.status==="QUARANTINE")?(E(c.location)+' issues Level '+lvl+' Quarantine')
+      :(c.status==="EVACUATED")?('Mandatory evacuation ordered in '+E(c.location))
+      :(E(c.location)+' — '+E((c.title||"").slice(0,52)));
+    return '<div class="alert"><span class="warn">⚠</span><div class="txt">'+line+'<span class="dt">'+E(c.date||"")+'</span></div></div>';
+  });
+  document.getElementById("alert-feed").innerHTML = items.join("") || '<div style="color:var(--muted);font-size:13px">No active alerts.</div>';
+}
+function quick(cases){
+  var newest=cases[0];
+  var base=newest?newest.url:'#cases';
+  var links=[['🗺','Outbreak Map',base],['👥','Personnel Directory',base],['📄','Classified Reports',base],['📻','Emergency Protocols',base]];
+  document.getElementById("quick").innerHTML=links.map(function(l){ return '<a class="qlink" href="'+E(l[2])+'"><span>'+l[0]+'</span>'+l[1]+'</a>'; }).join("");
+  if(newest){ document.getElementById("cta-map").setAttribute("href", newest.url); document.getElementById("cls").setAttribute("href", newest.url); }
+}
+function render(cases){
+  cases=(cases||[]).slice().sort(function(a,b){ return (b.episode||0)-(a.episode||0) || String(b.addedAt||"").localeCompare(String(a.addedAt||"")); });
+  stats(cases); feed(cases); quick(cases);
+  var g=document.getElementById("grid");
+  if(!cases.length){ document.getElementById("empty").style.display="block"; return; }
+  g.innerHTML=cases.map(card).join("");
+}
+(function(){
+  if(window.__SEED_CASES__){ render(window.__SEED_CASES__); return; }
+  fetch("cases.json",{cache:"no-store"}).then(function(r){ return r.ok?r.json():[]; }).then(function(d){ render(Array.isArray(d)?d:(d.cases||[])); }).catch(function(){ render([]); });
+})();
+</script>
+</body>
+</html>
