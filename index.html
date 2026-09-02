@@ -76,6 +76,16 @@
   .side .box{background:var(--panel);border:1px solid var(--grid);border-radius:4px;padding:14px 15px;margin-bottom:16px}
   .side h3{font-size:13px;letter-spacing:.12em;margin:0 0 10px;display:flex;align-items:center;gap:8px;color:var(--accent2);border-bottom:1px dashed var(--grid);padding-bottom:8px}
   .side h3 .ic{color:var(--accent)}
+  /* live video monitor panel */
+  .vidbox{padding:0;overflow:hidden}
+  .vidbox .vhead{display:flex;align-items:center;gap:8px;padding:11px 14px 10px;font-size:13px;letter-spacing:.12em;color:var(--accent2);border-bottom:1px dashed var(--grid)}
+  .vidbox .vhead .ic{color:var(--accent)}
+  .vidbox .dot{width:9px;height:9px;border-radius:50%;background:var(--alert);box-shadow:0 0 8px var(--alert);margin-left:auto;animation:blink 1.3s steps(2) infinite}
+  .vidframe{position:relative;background:#060f0d;line-height:0}
+  .vidframe video{display:block;width:100%;filter:grayscale(.2) contrast(1.06) brightness(.92)}
+  .vidframe::before{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:repeating-linear-gradient(0deg,rgba(0,0,0,.15) 0,rgba(0,0,0,.15) 1px,transparent 1px,transparent 3px)}
+  .vidframe::after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:var(--accent);opacity:.09;mix-blend-mode:overlay}
+  .vidframe .vtag{position:absolute;left:0;right:0;bottom:0;z-index:2;background:linear-gradient(transparent,rgba(0,0,0,.75));color:var(--accent);font-size:10px;letter-spacing:.1em;padding:16px 10px 6px}
   .srow{display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px dotted var(--grid)}
   .srow:last-child{border-bottom:0}
   .srow .lab{color:var(--text);opacity:.75;font-size:12px;letter-spacing:.06em;flex:1;display:flex;align-items:center;gap:9px}
@@ -130,6 +140,15 @@
     </div>
 
     <aside class="side">
+      <div class="box vidbox" id="vidcard">
+        <div class="vhead"><span class="ic">🛰</span> GLOBAL MONITOR <span class="dot" title="live"></span></div>
+        <div class="vidframe">
+          <video id="feedvid" autoplay muted loop playsinline preload="metadata" poster="hero.jpg">
+            <source src="worldmap720.mp4" type="video/mp4">
+          </video>
+          <div class="vtag">◉ LIVE SATELLITE FEED — GLOBAL THREAT MONITORING</div>
+        </div>
+      </div>
       <div class="box" id="situation">
         <h3><span class="ic">☣</span> SITUATION OVERVIEW</h3>
         <div id="stat-rows"></div>
@@ -158,6 +177,8 @@
 document.getElementById("yr").textContent = new Date().getFullYear();
 // hero background (falls back to a dark gradient if hero.jpg is absent)
 (function(){ var img=new Image(); img.onload=function(){ document.getElementById("herobg").style.backgroundImage="url(hero.jpg)"; }; img.src="hero.jpg"; })();
+// live monitor video — hide the whole card if the file is missing/unplayable
+(function(){ var v=document.getElementById("feedvid"); if(!v) return; function hide(){ var c=document.getElementById("vidcard"); if(c) c.style.display="none"; } v.addEventListener("error",hide,true); var s=v.querySelector("source"); if(s) s.addEventListener("error",hide); v.play&&v.play().catch(function(){}); })();
 var E=function(s){ return String(s==null?"":s).replace(/[<>&]/g,function(c){return {"<":"&lt;",">":"&gt;","&":"&amp;"}[c];}); };
 function hash(s){ var h=0; s=String(s||""); for(var i=0;i<s.length;i++){ h=(h*31+s.charCodeAt(i))|0; } return Math.abs(h); }
 function comma(n){ return Math.round(n).toString().replace(/\B(?=(\d{3})+(?!\d))/g,","); }
