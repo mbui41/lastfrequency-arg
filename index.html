@@ -56,6 +56,15 @@
   h2.sec::before{content:"";width:8px;height:8px;background:var(--accent);border-radius:2px;box-shadow:0 0 8px var(--accent)}
   .layout{display:grid;grid-template-columns:1fr 330px;gap:20px}
   .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+  /* pagination */
+  .pager{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:6px;margin:18px 0 4px}
+  .pager:empty{display:none}
+  .pager button{background:var(--panel);border:1px solid var(--grid);color:var(--text);font-family:var(--mono);font-size:13px;min-width:34px;padding:6px 10px;border-radius:3px;cursor:pointer;letter-spacing:.04em}
+  .pager button:hover:not(:disabled){border-color:var(--accent);color:var(--accent)}
+  .pager button.on{background:var(--accent);color:var(--bg);border-color:var(--accent);font-weight:bold}
+  .pager button:disabled{opacity:.4;cursor:default}
+  .pager .ell{color:var(--text);opacity:.5;padding:0 2px}
+  .pager .pinfo{color:var(--text);opacity:.6;font-size:11px;letter-spacing:.06em;margin-left:6px}
   .card{background:var(--panel);border:1px solid var(--grid);border-radius:4px;overflow:hidden;transition:transform .15s,border-color .15s;display:block}
   .card:hover{transform:translateY(-3px);border-color:var(--accent)}
   .card .thumb{position:relative;aspect-ratio:16/9;background:#0c231d center/cover no-repeat}
@@ -136,6 +145,7 @@
     <div class="mainc">
       <h2 class="sec" id="cases">LATEST CASES</h2>
       <div class="grid" id="grid"></div>
+      <div class="pager" id="pager"></div>
       <div class="empty" id="empty" style="display:none">No case files published yet. New broadcasts appear here automatically.</div>
     </div>
 
@@ -229,12 +239,36 @@ function quick(cases){
   document.getElementById("quick").innerHTML=links.map(function(l){ return '<a class="qlink" href="'+E(l[2])+'"><span>'+l[0]+'</span>'+l[1]+'</a>'; }).join("");
   if(newest){ document.getElementById("cls").setAttribute("href", newest.url); }
 }
+var PER_PAGE=10; var ALL_CASES=[]; var PAGE=1;
+function totalPages(){ return Math.max(1, Math.ceil(ALL_CASES.length/PER_PAGE)); }
+function showPage(p){
+  var tp=totalPages(); PAGE=Math.min(Math.max(1,p),tp);
+  var start=(PAGE-1)*PER_PAGE;
+  document.getElementById("grid").innerHTML=ALL_CASES.slice(start,start+PER_PAGE).map(card).join("");
+  renderPager();
+  // Keep the grid in view when paging (but not on the very first render).
+  if(PAGE>1||start>0){ var s=document.getElementById("cases"); if(s&&s.scrollIntoView) s.scrollIntoView({behavior:"smooth",block:"start"}); }
+}
+function pageBtn(n){ return '<button class="'+(n===PAGE?'on':'')+'" onclick="showPage('+n+')">'+n+'</button>'; }
+function renderPager(){
+  var pager=document.getElementById("pager"); var tp=totalPages();
+  if(tp<=1){ pager.innerHTML=""; return; }
+  var h='<button onclick="showPage('+(PAGE-1)+')"'+(PAGE<=1?' disabled':'')+'>‹ PREV</button>';
+  // Windowed page numbers: first, last, and a few around the current page.
+  var nums=[]; for(var i=1;i<=tp;i++){ if(i===1||i===tp||(i>=PAGE-1&&i<=PAGE+1)) nums.push(i); }
+  var last=0;
+  for(var k=0;k<nums.length;k++){ var n=nums[k]; if(n-last>1) h+='<span class="ell">…</span>'; h+=pageBtn(n); last=n; }
+  h+='<button onclick="showPage('+(PAGE+1)+')"'+(PAGE>=tp?' disabled':'')+'>NEXT ›</button>';
+  h+='<span class="pinfo">'+ALL_CASES.length+' CASES · PAGE '+PAGE+'/'+tp+'</span>';
+  pager.innerHTML=h;
+}
 function render(cases){
   cases=(cases||[]).slice().sort(function(a,b){ return (b.episode||0)-(a.episode||0) || String(b.addedAt||"").localeCompare(String(a.addedAt||"")); });
   stats(cases); feed(cases); quick(cases);
-  var g=document.getElementById("grid");
-  if(!cases.length){ document.getElementById("empty").style.display="block"; return; }
-  g.innerHTML=cases.map(card).join("");
+  ALL_CASES=cases; PAGE=1;
+  if(!cases.length){ document.getElementById("empty").style.display="block"; document.getElementById("pager").innerHTML=""; return; }
+  document.getElementById("empty").style.display="none";
+  showPage(1);
 }
 (function(){
   if(window.__SEED_CASES__){ render(window.__SEED_CASES__); return; }
