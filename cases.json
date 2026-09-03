@@ -26,5 +26,19 @@
     "thumb": "https://i.ytimg.com/vi/MGe1AQC74yU/hqdefault.jpg",
     "episode": 2,
     "addedAt": "2026-09-03T00:01:20.091Z"
+  },
+  {
+    "caseNumber": "LF-2029-317",
+    "slug": "lf-2029-317",
+    "title": "Operation Copper Tide: Philadelphia Quarantine Breach",
+    "location": "Philadelphia, Pennsylvania",
+    "date": "October 14, 202X",
+    "threatLevel": 5,
+    "status": "LOST",
+    "url": "https://thelastfrequency.com/lf-2029-317/",
+    "youtubeId": "p2chifRfkPI",
+    "thumb": "https://i.ytimg.com/vi/p2chifRfkPI/hqdefault.jpg",
+    "episode": 3,
+    "addedAt": "2026-09-03T03:07:26.137Z"
   }
 ]
