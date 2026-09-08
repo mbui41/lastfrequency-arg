@@ -40,5 +40,19 @@
     "thumb": "https://i.ytimg.com/vi/p2chifRfkPI/hqdefault.jpg",
     "episode": 3,
     "addedAt": "2026-09-03T03:07:26.137Z"
+  },
+  {
+    "caseNumber": "LF-2028-336",
+    "slug": "lf-2028-336",
+    "title": "Operation Island of Silence: Harbor Filtration Breach",
+    "location": "Manhattan, New York City",
+    "date": "October 14, 202X",
+    "threatLevel": 5,
+    "status": "LOST",
+    "url": "https://thelastfrequency.com/lf-2028-336/",
+    "youtubeId": "mh6nUgrXAyw",
+    "thumb": "https://i.ytimg.com/vi/mh6nUgrXAyw/hqdefault.jpg",
+    "episode": 4,
+    "addedAt": "2026-09-08T22:39:36.925Z"
   }
 ]
