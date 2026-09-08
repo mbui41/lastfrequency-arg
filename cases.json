@@ -54,5 +54,19 @@
     "thumb": "https://i.ytimg.com/vi/mh6nUgrXAyw/hqdefault.jpg",
     "episode": 4,
     "addedAt": "2026-09-08T22:39:36.925Z"
+  },
+  {
+    "caseNumber": "LF-2029-463",
+    "slug": "lf-2029-463",
+    "title": "Operation Skyfall: Atmospheric Dissociation Event",
+    "location": "Flagstaff, Arizona",
+    "date": "October 14, 2024",
+    "threatLevel": 5,
+    "status": "ONGOING",
+    "url": "https://thelastfrequency.com/lf-2029-463/",
+    "youtubeId": "r3Z1EBBTsY8",
+    "thumb": "https://i.ytimg.com/vi/r3Z1EBBTsY8/hqdefault.jpg",
+    "episode": 5,
+    "addedAt": "2026-09-08T22:40:43.237Z"
   }
 ]
