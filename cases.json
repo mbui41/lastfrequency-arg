@@ -68,5 +68,19 @@
     "thumb": "https://i.ytimg.com/vi/r3Z1EBBTsY8/hqdefault.jpg",
     "episode": 5,
     "addedAt": "2026-09-08T22:40:43.237Z"
+  },
+  {
+    "caseNumber": "LF-2032-774",
+    "slug": "lf-2032-774",
+    "title": "Operation Whiteout: Denver Cyclone Event",
+    "location": "Denver, Colorado",
+    "date": "Friday, December 12",
+    "threatLevel": 5,
+    "status": "LOST",
+    "url": "https://thelastfrequency.com/lf-2032-774/",
+    "youtubeId": "zt34aEUIqZU",
+    "thumb": "https://i.ytimg.com/vi/zt34aEUIqZU/hqdefault.jpg",
+    "episode": 6,
+    "addedAt": "2026-09-10T19:32:17.930Z"
   }
 ]
