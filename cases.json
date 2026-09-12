@@ -82,5 +82,19 @@
     "thumb": "https://i.ytimg.com/vi/zt34aEUIqZU/hqdefault.jpg",
     "episode": 6,
     "addedAt": "2026-09-10T19:32:17.930Z"
+  },
+  {
+    "caseNumber": "LF-2030-008",
+    "slug": "lf-2030-008",
+    "title": "Operation Arctic Feedback: The Seven-Day Slide",
+    "location": "Detroit, Michigan",
+    "date": "October 14, 202X",
+    "threatLevel": 5,
+    "status": "LOST",
+    "url": "https://thelastfrequency.com/lf-2030-008/",
+    "youtubeId": "yZ8WwGw-AnI",
+    "thumb": "https://i.ytimg.com/vi/yZ8WwGw-AnI/hqdefault.jpg",
+    "episode": 7,
+    "addedAt": "2026-09-12T19:32:36.699Z"
   }
 ]
