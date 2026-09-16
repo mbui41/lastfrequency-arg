@@ -96,5 +96,19 @@
     "thumb": "https://i.ytimg.com/vi/yZ8WwGw-AnI/hqdefault.jpg",
     "episode": 7,
     "addedAt": "2026-09-12T19:32:36.699Z"
+  },
+  {
+    "caseNumber": "LF-2029-309",
+    "slug": "lf-2029-309",
+    "title": "Project Aegis: Grid-Lock Alpha",
+    "location": "Houston, Texas",
+    "date": "August 12, 202X",
+    "threatLevel": 5,
+    "status": "ONGOING",
+    "url": "https://thelastfrequency.com/lf-2029-309/",
+    "youtubeId": "MlqVXBFvUMg",
+    "thumb": "https://i.ytimg.com/vi/MlqVXBFvUMg/hqdefault.jpg",
+    "episode": 8,
+    "addedAt": "2026-09-16T16:00:43.296Z"
   }
 ]
