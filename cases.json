@@ -110,5 +110,19 @@
     "thumb": "https://i.ytimg.com/vi/MlqVXBFvUMg/hqdefault.jpg",
     "episode": 8,
     "addedAt": "2026-09-16T16:00:43.296Z"
+  },
+  {
+    "caseNumber": "LF-2030-254",
+    "slug": "lf-2030-254",
+    "title": "Operation Outfall: Harbor Breach",
+    "location": "Boston, Massachusetts",
+    "date": "October 14, 202X",
+    "threatLevel": 5,
+    "status": "LOST",
+    "url": "https://thelastfrequency.com/lf-2030-254/",
+    "youtubeId": "f2NxQ55Wkyw",
+    "thumb": "https://i.ytimg.com/vi/f2NxQ55Wkyw/hqdefault.jpg",
+    "episode": 9,
+    "addedAt": "2026-09-18T00:38:41.031Z"
   }
 ]
