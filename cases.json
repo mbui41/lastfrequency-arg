@@ -124,5 +124,19 @@
     "thumb": "https://i.ytimg.com/vi/f2NxQ55Wkyw/hqdefault.jpg",
     "episode": 9,
     "addedAt": "2026-09-18T00:38:41.031Z"
+  },
+  {
+    "caseNumber": "LF-2029-409",
+    "slug": "lf-2029-409",
+    "title": "Operation Frost Wall: Atmospheric Collapse Event",
+    "location": "Minneapolis, Minnesota",
+    "date": "January 14, 202X",
+    "threatLevel": 5,
+    "status": "LOST",
+    "url": "https://thelastfrequency.com/lf-2029-409/",
+    "youtubeId": "AAhoX08ZMO8",
+    "thumb": "https://i.ytimg.com/vi/AAhoX08ZMO8/hqdefault.jpg",
+    "episode": 10,
+    "addedAt": "2026-09-19T22:38:05.006Z"
   }
 ]
