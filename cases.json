@@ -138,5 +138,19 @@
     "thumb": "https://i.ytimg.com/vi/AAhoX08ZMO8/hqdefault.jpg",
     "episode": 10,
     "addedAt": "2026-09-19T22:38:05.006Z"
+  },
+  {
+    "caseNumber": "LF-2028-164",
+    "slug": "lf-2028-164",
+    "title": "Operation Santa Ana Haze",
+    "location": "Los Angeles, California",
+    "date": "October 24, 2024",
+    "threatLevel": 5,
+    "status": "LOST",
+    "url": "https://thelastfrequency.com/lf-2028-164/",
+    "youtubeId": "SBcOWC-2_Lk",
+    "thumb": "https://i.ytimg.com/vi/SBcOWC-2_Lk/hqdefault.jpg",
+    "episode": 11,
+    "addedAt": "2026-09-21T02:32:21.404Z"
   }
 ]
