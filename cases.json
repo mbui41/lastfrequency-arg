@@ -152,5 +152,19 @@
     "thumb": "https://i.ytimg.com/vi/SBcOWC-2_Lk/hqdefault.jpg",
     "episode": 11,
     "addedAt": "2026-09-21T02:32:21.404Z"
+  },
+  {
+    "caseNumber": "LF-2029-721",
+    "slug": "lf-2029-721",
+    "title": "Operation Bioluminescent Tide",
+    "location": "Detroit, Michigan",
+    "date": "October 24, 2023",
+    "threatLevel": 5,
+    "status": "ONGOING",
+    "url": "https://thelastfrequency.com/lf-2029-721/",
+    "youtubeId": "Hw69TV0hnRk",
+    "thumb": "https://i.ytimg.com/vi/Hw69TV0hnRk/hqdefault.jpg",
+    "episode": 12,
+    "addedAt": "2026-09-22T19:32:17.785Z"
   }
 ]
