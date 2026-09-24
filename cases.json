@@ -166,5 +166,19 @@
     "thumb": "https://i.ytimg.com/vi/Hw69TV0hnRk/hqdefault.jpg",
     "episode": 12,
     "addedAt": "2026-09-22T19:32:17.785Z"
+  },
+  {
+    "caseNumber": "LF-2028-836",
+    "slug": "lf-2028-836",
+    "title": "Project Jetstream Zero - DFW Incursion",
+    "location": "Dallas-Fort Worth International Airport",
+    "date": "October 14, 2024",
+    "threatLevel": 5,
+    "status": "LOST",
+    "url": "https://thelastfrequency.com/lf-2028-836/",
+    "youtubeId": "gjSwfxUd83k",
+    "thumb": "https://i.ytimg.com/vi/gjSwfxUd83k/hqdefault.jpg",
+    "episode": 13,
+    "addedAt": "2026-09-24T12:18:29.057Z"
   }
 ]
