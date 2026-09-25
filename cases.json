@@ -180,5 +180,19 @@
     "thumb": "https://i.ytimg.com/vi/gjSwfxUd83k/hqdefault.jpg",
     "episode": 13,
     "addedAt": "2026-09-24T12:18:29.057Z"
+  },
+  {
+    "caseNumber": "LF-2027-411",
+    "slug": "lf-2027-411",
+    "title": "OPERATION: BASCULE BARRIER / CHICAGO LOOP CONTAINMENT",
+    "location": "Chicago, Illinois",
+    "date": "October 14, 202X",
+    "threatLevel": 5,
+    "status": "ONGOING",
+    "url": "https://thelastfrequency.com/lf-2027-411/",
+    "youtubeId": "NGuAvgGTpIw",
+    "thumb": "https://i.ytimg.com/vi/NGuAvgGTpIw/hqdefault.jpg",
+    "episode": 14,
+    "addedAt": "2026-09-25T01:44:14.766Z"
   }
 ]
