@@ -194,5 +194,19 @@
     "thumb": "https://i.ytimg.com/vi/NGuAvgGTpIw/hqdefault.jpg",
     "episode": 14,
     "addedAt": "2026-09-25T01:44:14.766Z"
+  },
+  {
+    "caseNumber": "LF-2027-027",
+    "slug": "lf-2027-027",
+    "title": "Project Lattice: Tropospheric Displacement Event",
+    "location": "Seattle, Washington",
+    "date": "October 14, 2024",
+    "threatLevel": 5,
+    "status": "ONGOING",
+    "url": "https://thelastfrequency.com/lf-2027-027/",
+    "youtubeId": "MP8W7Mk8Kik",
+    "thumb": "https://i.ytimg.com/vi/MP8W7Mk8Kik/hqdefault.jpg",
+    "episode": 15,
+    "addedAt": "2026-09-29T14:02:13.985Z"
   }
 ]
