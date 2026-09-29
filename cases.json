@@ -208,5 +208,19 @@
     "thumb": "https://i.ytimg.com/vi/MP8W7Mk8Kik/hqdefault.jpg",
     "episode": 15,
     "addedAt": "2026-09-29T14:02:13.985Z"
+  },
+  {
+    "caseNumber": "LF-2028-004",
+    "slug": "lf-2028-004",
+    "title": "Project Sky-Harvest Containment Breach",
+    "location": "Seattle, Washington",
+    "date": "November 14, 2024",
+    "threatLevel": 5,
+    "status": "ONGOING",
+    "url": "https://thelastfrequency.com/lf-2028-004/",
+    "youtubeId": "JQ7XeWnWe-M",
+    "thumb": "https://i.ytimg.com/vi/JQ7XeWnWe-M/hqdefault.jpg",
+    "episode": 16,
+    "addedAt": "2026-09-29T14:02:58.055Z"
   }
 ]
