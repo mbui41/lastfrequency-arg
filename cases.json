@@ -250,5 +250,19 @@
     "thumb": "https://i.ytimg.com/vi/miBJEKxg8Bs/hqdefault.jpg",
     "episode": 18,
     "addedAt": "2026-10-03T19:31:44.630Z"
+  },
+  {
+    "caseNumber": "LF-2030-762",
+    "slug": "lf-2030-762",
+    "title": "Operation Midnight Harvest: The Porphyric Pandemic",
+    "location": "Atlanta, Georgia",
+    "date": "October 14, 20XX",
+    "threatLevel": 5,
+    "status": "LOST",
+    "url": "https://thelastfrequency.com/lf-2030-762/",
+    "youtubeId": "A9pvxm44Id0",
+    "thumb": "https://i.ytimg.com/vi/A9pvxm44Id0/hqdefault.jpg",
+    "episode": 19,
+    "addedAt": "2026-10-04T19:32:43.470Z"
   }
 ]
