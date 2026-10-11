@@ -278,5 +278,19 @@
     "thumb": "https://i.ytimg.com/vi/bLy26evCvt4/hqdefault.jpg",
     "episode": 20,
     "addedAt": "2026-10-06T19:31:50.857Z"
+  },
+  {
+    "caseNumber": "LF-2030-742",
+    "slug": "lf-2030-742",
+    "title": "Operation Full Worm Moon: Containment Protocol 1764",
+    "location": "Topeka, Kansas",
+    "date": "March 25, 2024",
+    "threatLevel": 5,
+    "status": "ONGOING",
+    "url": "https://thelastfrequency.com/lf-2030-742/",
+    "youtubeId": "HQfplziIpxU",
+    "thumb": "https://i.ytimg.com/vi/HQfplziIpxU/hqdefault.jpg",
+    "episode": 21,
+    "addedAt": "2026-10-11T19:32:37.544Z"
   }
 ]
