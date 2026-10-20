@@ -320,5 +320,19 @@
     "thumb": "https://i.ytimg.com/vi/ZN3Cv2UxPOE/hqdefault.jpg",
     "episode": 23,
     "addedAt": "2026-10-17T19:31:33.033Z"
+  },
+  {
+    "caseNumber": "LF-2031-193",
+    "slug": "lf-2031-193",
+    "title": "Operation Jovian Descent / Hartford Grid Breach",
+    "location": "Hartford, Connecticut",
+    "date": "October 14, 2024",
+    "threatLevel": 5,
+    "status": "LOST",
+    "url": "https://thelastfrequency.com/lf-2031-193/",
+    "youtubeId": "juO79pQADZ0",
+    "thumb": "https://i.ytimg.com/vi/juO79pQADZ0/hqdefault.jpg",
+    "episode": 24,
+    "addedAt": "2026-10-20T19:33:00.148Z"
   }
 ]
