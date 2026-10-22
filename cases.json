@@ -334,5 +334,19 @@
     "thumb": "https://i.ytimg.com/vi/juO79pQADZ0/hqdefault.jpg",
     "episode": 24,
     "addedAt": "2026-10-20T19:33:00.148Z"
+  },
+  {
+    "caseNumber": "LF-2032-220",
+    "slug": "lf-2032-220",
+    "title": "Operation Oceanic Shroud / Impact Event 88-Delta",
+    "location": "Ventura, California",
+    "date": "October 14, 202X",
+    "threatLevel": 5,
+    "status": "LOST",
+    "url": "https://thelastfrequency.com/lf-2032-220/",
+    "youtubeId": "D_8oJfqcDvc",
+    "thumb": "https://i.ytimg.com/vi/D_8oJfqcDvc/hqdefault.jpg",
+    "episode": 25,
+    "addedAt": "2026-10-22T19:31:43.257Z"
   }
 ]
