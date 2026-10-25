@@ -348,5 +348,19 @@
     "thumb": "https://i.ytimg.com/vi/D_8oJfqcDvc/hqdefault.jpg",
     "episode": 25,
     "addedAt": "2026-10-22T19:31:43.257Z"
+  },
+  {
+    "caseNumber": "LF-2028-544",
+    "slug": "lf-2028-544",
+    "title": "Operation Midnight Inversion",
+    "location": "Steubenville, Ohio",
+    "date": "October 24, 2024",
+    "threatLevel": 5,
+    "status": "ONGOING",
+    "url": "https://thelastfrequency.com/lf-2028-544/",
+    "youtubeId": "SeNXWgBZRR0",
+    "thumb": "https://i.ytimg.com/vi/SeNXWgBZRR0/hqdefault.jpg",
+    "episode": 26,
+    "addedAt": "2026-10-25T17:24:20.878Z"
   }
 ]
