@@ -362,5 +362,19 @@
     "thumb": "https://i.ytimg.com/vi/SeNXWgBZRR0/hqdefault.jpg",
     "episode": 26,
     "addedAt": "2026-10-25T17:24:20.878Z"
+  },
+  {
+    "caseNumber": "LF-2030-150",
+    "slug": "lf-2030-150",
+    "title": "Operation Frozen Island: Texas Interconnection Total System Failure",
+    "location": "Austin, Texas",
+    "date": "February 12, 20XX",
+    "threatLevel": 5,
+    "status": "LOST",
+    "url": "https://thelastfrequency.com/lf-2030-150/",
+    "youtubeId": "_-Q355gMAEc",
+    "thumb": "https://i.ytimg.com/vi/_-Q355gMAEc/hqdefault.jpg",
+    "episode": 27,
+    "addedAt": "2026-10-28T20:04:08.779Z"
   }
 ]
