@@ -390,5 +390,19 @@
     "thumb": "https://i.ytimg.com/vi/teFYYHJAaM4/hqdefault.jpg",
     "episode": 28,
     "addedAt": "2026-11-02T14:52:25.094Z"
+  },
+  {
+    "caseNumber": "LF-2028-214",
+    "slug": "lf-2028-214",
+    "title": "Operation Apophis: Impact Event 99942",
+    "location": "Anchorage, Alaska",
+    "date": "April 13, 2029",
+    "threatLevel": 5,
+    "status": "ONGOING",
+    "url": "https://thelastfrequency.com/lf-2028-214/",
+    "youtubeId": "jB79RQiAqnM",
+    "thumb": "https://i.ytimg.com/vi/jB79RQiAqnM/hqdefault.jpg",
+    "episode": 29,
+    "addedAt": "2026-11-02T14:53:06.305Z"
   }
 ]
