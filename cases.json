@@ -376,5 +376,19 @@
     "thumb": "https://i.ytimg.com/vi/_-Q355gMAEc/hqdefault.jpg",
     "episode": 27,
     "addedAt": "2026-10-28T20:04:08.779Z"
+  },
+  {
+    "caseNumber": "LF-2031-511",
+    "slug": "lf-2031-511",
+    "title": "Operation Red Grit / The Dark Fog Event",
+    "location": "El Paso, Texas",
+    "date": "October 14, 202X",
+    "threatLevel": 5,
+    "status": "ONGOING",
+    "url": "https://thelastfrequency.com/lf-2031-511/",
+    "youtubeId": "teFYYHJAaM4",
+    "thumb": "https://i.ytimg.com/vi/teFYYHJAaM4/hqdefault.jpg",
+    "episode": 28,
+    "addedAt": "2026-11-02T14:52:25.094Z"
   }
 ]
