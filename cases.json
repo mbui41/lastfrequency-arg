@@ -404,5 +404,19 @@
     "thumb": "https://i.ytimg.com/vi/jB79RQiAqnM/hqdefault.jpg",
     "episode": 29,
     "addedAt": "2026-11-02T14:53:06.305Z"
+  },
+  {
+    "caseNumber": "LF-2027-517",
+    "slug": "lf-2027-517",
+    "title": "Operation Frost-Tide: The Patapsco Anomaly",
+    "location": "Baltimore, Maryland",
+    "date": "November 14th, 2024",
+    "threatLevel": 5,
+    "status": "ONGOING",
+    "url": "https://thelastfrequency.com/lf-2027-517/",
+    "youtubeId": "c8j8LTNUayw",
+    "thumb": "https://i.ytimg.com/vi/c8j8LTNUayw/hqdefault.jpg",
+    "episode": 30,
+    "addedAt": "2026-11-03T21:33:06.717Z"
   }
 ]
