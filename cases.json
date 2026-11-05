@@ -418,5 +418,19 @@
     "thumb": "https://i.ytimg.com/vi/c8j8LTNUayw/hqdefault.jpg",
     "episode": 30,
     "addedAt": "2026-11-03T21:33:06.717Z"
+  },
+  {
+    "caseNumber": "LF-2030-726",
+    "slug": "lf-2030-726",
+    "title": "Operation Midnight Amputation / Displacement Protocol 99",
+    "location": "New York City, NY",
+    "date": "October 14, 202X",
+    "threatLevel": 5,
+    "status": "LOST",
+    "url": "https://thelastfrequency.com/lf-2030-726/",
+    "youtubeId": "VBbCaRU670o",
+    "thumb": "https://i.ytimg.com/vi/VBbCaRU670o/hqdefault.jpg",
+    "episode": 31,
+    "addedAt": "2026-11-05T23:36:50.994Z"
   }
 ]
