@@ -432,5 +432,19 @@
     "thumb": "https://i.ytimg.com/vi/VBbCaRU670o/hqdefault.jpg",
     "episode": 31,
     "addedAt": "2026-11-05T23:36:50.994Z"
+  },
+  {
+    "caseNumber": "LF-2030-804",
+    "slug": "lf-2030-804",
+    "title": "Atlanta CDC Emergency Transmission As The Undead Breach Level Four Isolation Labs",
+    "location": "Atlanta, Georgia",
+    "date": "November 14, 202X",
+    "threatLevel": 5,
+    "status": "LOST",
+    "url": "https://thelastfrequency.com/lf-2030-804/",
+    "youtubeId": "LR1_wz0J07M",
+    "thumb": "https://i.ytimg.com/vi/LR1_wz0J07M/hqdefault.jpg",
+    "episode": 32,
+    "addedAt": "2026-11-07T21:33:40.056Z"
   }
 ]
