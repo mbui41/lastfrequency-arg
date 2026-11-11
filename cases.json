@@ -446,5 +446,19 @@
     "thumb": "https://i.ytimg.com/vi/LR1_wz0J07M/hqdefault.jpg",
     "episode": 32,
     "addedAt": "2026-11-07T21:33:40.056Z"
+  },
+  {
+    "caseNumber": "LF-2032-788",
+    "slug": "lf-2032-788",
+    "title": "Operation Cauterize: Rocky Mountain Cordon Sanitaire",
+    "location": "Summit County, Colorado",
+    "date": "December 14, 202X",
+    "threatLevel": 5,
+    "status": "LOST",
+    "url": "https://thelastfrequency.com/lf-2032-788/",
+    "youtubeId": "swf_rzIf9rM",
+    "thumb": "https://i.ytimg.com/vi/swf_rzIf9rM/hqdefault.jpg",
+    "episode": 33,
+    "addedAt": "2026-11-11T23:15:50.354Z"
   }
 ]
